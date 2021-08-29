@@ -1,11 +1,8 @@
 const mongoose=require('mongoose')
 require('dotenv').config() 
-const URI='mongodb+srv://vishvajeet:tipu%402720@company.nw46w.mongodb.net/company?retryWrites=true&w=majority'
-//const URI='mongodb+srv://vishvajeet:tipu%402720@company.nw46w.mongodb.net/comapny'
-mongoose.connect(URI, 
-{
-// mongoose.connect('mongodb://localhost:27017/Company', 
-// {
+
+ mongoose.connect(process.env.MONGOOSE_URL||'mongodb://localhost:27017/Company', 
+ {
     useNewUrlParser: true,   
 
     useUnifiedTopology: true,
