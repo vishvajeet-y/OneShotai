@@ -1,0 +1,38 @@
+.card {
+  width: 50%;
+  height: 80%;
+}
+.setTop {
+  margin-top: 3%;
+}
+.setFont {
+  font-size: 15px;
+}
+.setDisplay {
+  display: flex;
+}
+.setLeft {
+  margin-left: 2%;
+}
+.imagebackground {
+}
+.companyinfo {
+  display: flex;
+}
+.companyinfo_info {
+  display: flex;
+}
+.imagebackground {
+  width: 12%;
+}
+@media (max-width: 700px) {
+  .companyinfo {
+    flex-direction: column;
+  }
+  .companyinfo_info {
+    flex-direction: column;
+  }
+  .imagebackground {
+    width: 25%;
+  }
+}
